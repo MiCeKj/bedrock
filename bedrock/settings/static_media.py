@@ -449,7 +449,15 @@ PIPELINE_CSS = {
         'source_filenames': (
             'css/firefox/testflight.less',
         ),
-        'output_filename': 'css/firefox-ios-testflight_bundle.css',
+        'output_filename': 'css/firefox-ios-testflight-bundle.css',
+    },
+    'firefox-mobile': {
+        'source_filenames': (
+            'css/base/mozilla-modal.less',
+            'css/base/send-to-device.less',
+            'css/firefox/mobile.scss',
+        ),
+        'output_filename': 'css/firefox_mobile-bundle.css',
     },
     'firefox_mobile_download': {
         'source_filenames': (
@@ -458,7 +466,7 @@ PIPELINE_CSS = {
             'css/tabzilla/tabzilla-static.less',
             'css/firefox/mobile-download.less',
         ),
-        'output_filename': 'css/firefox_mobile_download.css',
+        'output_filename': 'css/firefox_mobile_download-bundle.css',
     },
     'firefox_mobile_download_desktop': {
         'source_filenames': (
@@ -1432,6 +1440,17 @@ PIPELINE_JS = {
             'js/base/mozilla-share-cta.js',
         ),
         'output_filename': 'js/firefox_feedback-bundle.js',
+    },
+    'firefox-mobile': {
+        'source_filenames': (
+            'js/base/mozilla-modal.js',
+            'js/base/send-to-device.js',
+            'js/libs/jquery.waypoints.min.js',
+            'js/libs/jquery.waypoints-sticky.min.js',
+            'js/hubs/sub-nav.js',
+            'js/firefox/mobile.js',
+        ),
+        'output_filename': 'js/firefox_mobile-bundle.js',
     },
     'firefox_mobile_download_desktop': {
         'source_filenames': (
